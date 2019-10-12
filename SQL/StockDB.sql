@@ -52,9 +52,10 @@ PrevMRP INT
 Select * FROM Products
 
 
+
 CREATE TABLE Purchases(
 
-ID INT IDENTITY(1,1),
+ID INT IDENTITY(1,1) PRIMARY KEY,
 Date VARCHAR(50),
 BillNo VARCHAR(50),
 CateogoryID INT REFERENCES Categories (ID),
@@ -70,9 +71,11 @@ Remarks VARCHAR(100)
 
 Select * FROM Purchases
 
+DROP TABLE Purchases
+
 CREATE TABLE Sales(
 
-ID INT IDENTITY(1,1),
+ID INT IDENTITY(1,1) PRIMARY KEY,
 Date VARCHAR(50),
 CateogoryID INT REFERENCES Categories (ID),
 CustomerID INT REFERENCES Customers (ID),
@@ -83,9 +86,11 @@ MRP INT
 
 Select * FROM Sales
 
+DROP TABLE Sales
+
 CREATE TABLE Orders(
 
-ID INT IDENTITY(1,1),
+ID INT IDENTITY(1,1) PRIMARY KEY,
 OrderDate VARCHAR(50),
 DeliveryDate VARCHAR(50),
 CateogoryID INT REFERENCES Categories (ID),
@@ -96,6 +101,8 @@ Remarks VARCHAR(50)
 )
 
 Select * FROM Orders
+
+DROP TABLE Orders
 
 
 
