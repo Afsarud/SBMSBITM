@@ -19,7 +19,7 @@ namespace ProectWindowsFormsApp1
 
         private void categoryComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            Console.Out.WriteLine("Good Day");
         }
     }
 }
