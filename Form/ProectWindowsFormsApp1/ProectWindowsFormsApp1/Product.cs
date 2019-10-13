@@ -16,5 +16,10 @@ namespace ProectWindowsFormsApp1
         {
             InitializeComponent();
         }
+
+        private void categoryComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
