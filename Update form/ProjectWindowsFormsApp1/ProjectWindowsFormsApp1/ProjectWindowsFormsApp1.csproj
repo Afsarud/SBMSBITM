@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{7C65FFBC-0CAA-495C-9E0A-CE788D157D76}</ProjectGuid>
+    <ProjectGuid>{C1A0387F-F3F6-4B15-B984-0FC4FE7CB815}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>ProectWindowsFormsApp1</RootNamespace>
-    <AssemblyName>ProectWindowsFormsApp1</AssemblyName>
+    <RootNamespace>ProjectWindowsFormsApp1</RootNamespace>
+    <AssemblyName>ProjectWindowsFormsApp1</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -46,32 +46,49 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BLL\ProductManager.cs" />
-    <Compile Include="Category.cs" />
-    <Compile Include="Category.Designer.cs">
-      <DependentUpon>Category.cs</DependentUpon>
+    <Compile Include="BLL\CustomerManager.cs" />
+    <Compile Include="CategoryUi.cs">
+      <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Customer.cs" />
-    <Compile Include="Customer.Designer.cs">
-      <DependentUpon>Customer.cs</DependentUpon>
+    <Compile Include="CategoryUi.Designer.cs">
+      <DependentUpon>CategoryUi.cs</DependentUpon>
     </Compile>
-    <Compile Include="Model\Product.cs" />
+    <Compile Include="CustomerUi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerUi.Designer.cs">
+      <DependentUpon>CustomerUi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Customers.cs" />
+    <Compile Include="ProductUi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductUi.Designer.cs">
+      <DependentUpon>ProductUi.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Purchase .cs" />
-    <Compile Include="Purchase .Designer.cs">
-      <DependentUpon>Purchase .cs</DependentUpon>
+    <Compile Include="PurchaseUi.cs">
+      <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Repository\ProductRepository.cs" />
-    <Compile Include="Supplier.cs" />
-    <Compile Include="Supplier.Designer.cs">
-      <DependentUpon>Supplier.cs</DependentUpon>
+    <Compile Include="PurchaseUi.Designer.cs">
+      <DependentUpon>PurchaseUi.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Category.resx">
-      <DependentUpon>Category.cs</DependentUpon>
+    <Compile Include="Repository\CustomerRepository.cs" />
+    <Compile Include="SupplierUi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SupplierUi.Designer.cs">
+      <DependentUpon>SupplierUi.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CategoryUi.resx">
+      <DependentUpon>CategoryUi.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Customer.resx">
-      <DependentUpon>Customer.cs</DependentUpon>
+    <EmbeddedResource Include="CustomerUi.resx">
+      <DependentUpon>CustomerUi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductUi.resx">
+      <DependentUpon>ProductUi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -82,13 +99,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Purchase .resx">
-      <DependentUpon>Purchase .cs</DependentUpon>
+    <EmbeddedResource Include="PurchaseUi.resx">
+      <DependentUpon>PurchaseUi.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Supplier.resx">
-      <DependentUpon>Supplier.cs</DependentUpon>
+    <EmbeddedResource Include="SupplierUi.resx">
+      <DependentUpon>SupplierUi.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="Properties\DataSources\ProectWindowsFormsApp1.Model.Product.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

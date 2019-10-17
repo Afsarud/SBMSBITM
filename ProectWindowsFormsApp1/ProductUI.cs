@@ -36,7 +36,7 @@ namespace ProectWindowsFormsApp1
             _product.ReorderLevel = Convert.ToInt32(reOrderLevelTextBox.Text);
             _product.ProductDescription = descriptionTextBox.Text;
 
-            //Afsar uddin Sumaiya
+
             showDataGridView.DataSource = _productManager.Add(_product);
 
         }
