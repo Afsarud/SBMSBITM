@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace ProectWindowsFormsApp1
 {
-    public partial class Product : Form
+    public partial class ProductsUI : Form
     {
-        public Product()
+        public ProductsUI()
         {
             InitializeComponent();
-        }
-
-        private void categoryComboBox_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            Console.Out.WriteLine("Good Day");
         }
     }
 }

@@ -36,18 +36,18 @@ ContactPerson VARCHAR(11)
 
 Select * FROM Suppliers 
 
-CREATE TABLE Products(
-
+CREATE TABLE Products
+(
 ID INT IDENTITY(1,1) PRIMARY KEY,
-Code VARCHAR(50),
-Name VARCHAR(50),
+ProductCode VARCHAR(50),
+ProductName VARCHAR(50),
 ReorderLevel INT,
-[Description] VARCHAR(100),
-Quantity INT,
+ProductDescription VARCHAR(MAX),
 CateogoryID INT REFERENCES Categories (ID),
-PrevUnitPrice INT,
-PrevMRP INT
+
 )
+
+Drop table Products
 
 Select * FROM Products
 
